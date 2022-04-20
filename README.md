@@ -4,7 +4,7 @@
 
 The purpose of this analysis was to provide our friend Steve with a tool to analyze stock returns. We created a VBA script that analyzed the returns of 12 different stocks for the years 2017 and 2018. The original code used a nested loop that looped through all 3013 rows for each of the 12 tickers. 
 
-Steve really liked the tool we provided and wanted to potentially use it to analyze thousands of stocks, which would be a much larger data set so we required a script than ran more efficiently. We refactored the code by removing the nested loop and including a ticker index, which enabled the code to only loop through the 3013 rows one time and still deliver the analysis of each ticker. Using VBA's timer feature in the script we captured and compared the run times of the original and refactored code. Our results are documented below. 
+Steve really liked the tool we provided and wanted to potentially use it to analyze thousands of stocks, which would be a much larger data set so we required a script than ran more efficiently. We refactored the code by removing the nested loop and including a ticker index that enabled the code to only loop through the 3013 rows one time and still deliver the analysis of each ticker. Using VBA's timer feature in the script we captured and compared the run times of the original and refactored code. Our results are documented below. 
 
 
 # Results: 

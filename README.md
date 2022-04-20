@@ -2,12 +2,14 @@
 
 ## Overview of Project
 
-The purpose of this analysis is to provide a tool to analyze stock returns. We began with a VBA script that analyzed specific years 2017 and 2018, which included data from 12 different stocks. We then refactored the code so we can run the analysis on data sets from any given year and potentially thousands of stocks. In order to make our script more efficient we removed the nested loop and created an index so that the code only needs to loop through the tickers one time. Using VBA's timer feature in the script we captured and compared the run times of the original and refactored code, results documented below. 
+The purpose of this analysis is to provide a tool to analyze stock returns. We began with a VBA script that analyzed specific years 2017 and 2018, which included data from 12 different stocks. We then refactored the code so we could run the analysis on data sets from any given year and potentially thousands of stocks. In order to make our script more efficient we removed the nested loop and created an index so that the code only needs to loop through the tickers one time. Using VBA's timer feature in the script we captured and compared the run times of the original and refactored code, results documented below. 
 
 
 ## Results: 
 
-Using images and examples of your code, compare the stock performance between 2017 and 2018, as well as the execution times of the original script and the refactored script.
+There was no change in the analysis result of the stocks when we ran the original code and the refactored code. In 2017 the majority of the stocks we analyzed showed a positive return, with a few showing a return exceeding 100%. The analysis of 2018 showed the majority of stocks with negative returns. ENPH and RUN maintained a positive return in 2018, however, with both exceeding 80%. 
+
+There was a significant difference in run time between the original and refactored code after we removed the nested loop and included a ticker index. 
 
 ## Original Code Output & Run Time
 ![VBA_OriginalOutput_2017](https://user-images.githubusercontent.com/66224990/164052566-306322a7-ebcf-43e2-9ddc-39e39d4e1b56.png)![VBA_Original_2017](https://user-images.githubusercontent.com/66224990/164052598-59dae291-6a9f-47c6-b573-52092f9a5ffe.png)

@@ -37,7 +37,9 @@ Here are the run times in seconds for each year (original vs refactored):
 * 2017 = 0.7148438 vs 0.1484375
 * 2018 = 0.6757812 vs 0.1484375
 
-![VBA Run Times Chart](https://user-images.githubusercontent.com/66224990/164293962-d44f827c-9df8-4871-bce0-4dabb131f2e6.png)
+We presented the values in the chart below to further illustrate the impact refactoring had on the run times. 
+
+![VBA Run Times](https://user-images.githubusercontent.com/66224990/164295143-bd089695-b2af-43fa-a772-fbf157ada7c7.png)
 
 The refactored code ran much faster, with each year running more than 4.5 times faster than the original code. The refactored code also resulted in more consistent run times than the original code, which may signal that the code logic is more sound and efficient over all. 
 

@@ -1,19 +1,26 @@
-# stock_analysis
+# Stock Analysis for Steve
 
 # Overview of Project
 
-The purpose of this analysis was to provide our friend Steve with a tool to analyze stock returns. We created a VBA script that analyzed the returns of 12 different stocks for the years 2017 and 2018. The original code used a nested loop that looped through all 3013 rows for each of the 12 tickers. 
+The purpose of this analysis was to provide our friend Steve with a tool to analyze stock returns. We created a VBA script that analyzed the returns of 12 different stocks for the years 2017 and 2018. The original code used a nested loop that looped through all 3013 rows for each of the 12 tickers and delivered the return percentage. We formatted the output data to highlight the positive returns as green and negative ones as red. 
 
-Steve really liked the tool we provided and wanted to potentially use it to analyze thousands of stocks, which would be a much larger data set so we required a script than ran more efficiently. We refactored the code by removing the nested loop and including a ticker index that enabled the code to only loop through the 3013 rows one time and still deliver the analysis of each ticker. Using VBA's timer feature in the script we captured and compared the run times of the original and refactored code. Our results are documented below. 
+Steve really liked the tool we provided and wanted to potentially use it to analyze thousands of stocks, which would potentially require the code to run on a much larger data. We refactored the code to improve efficiency and run time. The main change we made was to remove the nested loop and include a ticker index that enabled the code to only loop through the 3013 rows one time and still deliver the analysis of each ticker. Using VBA's timer feature in the script we captured and compared the run times of the original and refactored code. Our results are documented below. 
 
 
 # Results: 
 
 There was no change in the stock analysis results when we ran the original code and the refactored code. The purpose of refactoring the code was to improve efficiency and run time. 
 
-In 2017 the majority of the stocks we analyzed showed a positive return, with a few showing a return exceeding 100%. The analysis of 2018 showed the majority of stocks with negative returns. ENPH and RUN maintained a positive return in 2018, however, with both exceeding 80%. 
+In 2017 the majority of the stocks we analyzed showed a positive return, with a few showing a return exceeding 100%. The analysis of 2018 showed the majority of stocks had negative returns. ENPH and RUN maintained a positive return in 2018, however, with both exceeding 80%. 
 
-There was a significant difference in run time between the original and refactored code after we removed the nested loop and included a ticker index. The refactored code ran much faster, which would make it more suitable if Steve wants to analyze larger data sets than 12 stocks captured in 3013 rows.  
+There was a significant difference in run time between the original and refactored code. 
+
+Here are the run times for each year (original vs refactored):
+
+* 2017 = vs 0.148475
+* 2018 = vs 0.1484375
+
+The refactored code ran much faster and more efficiently, which would make it more suitable if Steve wants to analyze larger data sets than 12 stocks captured in 3013 rows.  
 
 ## Original Code Output & Run Time
 ![VBA_OriginalOutput_2017](https://user-images.githubusercontent.com/66224990/164052566-306322a7-ebcf-43e2-9ddc-39e39d4e1b56.png)<img width="253" alt="VBA_OriginalRunTime_2017" src="https://user-images.githubusercontent.com/66224990/164266380-4433bcc5-acee-45c1-81b2-a4089b76b10e.png">

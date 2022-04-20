@@ -13,14 +13,7 @@ There was no change in the stock analysis results when we ran the original code 
 
 In 2017 the majority of the stocks we analyzed showed a positive return, with a few showing a return exceeding 100%. The analysis of 2018 showed the majority of stocks had negative returns. ENPH and RUN maintained a positive return in 2018, however, with both exceeding 80%. 
 
-There was a significant difference in run time between the original and refactored code. 
-
-Here are the run times for each year (original vs refactored):
-
-* 2017 = vs 0.148475
-* 2018 = vs 0.1484375
-
-The refactored code ran much faster and more efficiently, which would make it more suitable if Steve wants to analyze larger data sets than 12 stocks captured in 3013 rows.  
+There was a significant difference in run time between the original and refactored code. We included the outputs and run times for each code below along with a chart to illustrate the difference. 
 
 ## Original Code Output & Run Time
 ![VBA_OriginalOutput_2017](https://user-images.githubusercontent.com/66224990/164052566-306322a7-ebcf-43e2-9ddc-39e39d4e1b56.png)<img width="253" alt="VBA_OriginalRunTime_2017" src="https://user-images.githubusercontent.com/66224990/164266380-4433bcc5-acee-45c1-81b2-a4089b76b10e.png">
@@ -36,6 +29,17 @@ The refactored code ran much faster and more efficiently, which would make it mo
 
 
 <img width="325" alt="VBA_Output_2018" src="https://user-images.githubusercontent.com/66224990/164130320-566925f9-fc1c-4f88-916c-b24ca22c0b52.png"><img width="249" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/66224990/164130334-b3268da5-f973-4f93-af10-0d51538bac67.png">
+
+## Side by Side Comparison
+
+Here are the run times in seconds for each year (original vs refactored):
+
+* 2017 = 0.7148438 vs 0.1484375
+* 2018 = 0.6757812 vs 0.1484375
+
+![VBA Run Times Chart](https://user-images.githubusercontent.com/66224990/164293962-d44f827c-9df8-4871-bce0-4dabb131f2e6.png)
+
+The refactored code ran much faster, with each year running more than 4.5 times faster than the original code. The refactored code also resulted in more consistent run times than the original code, which may signal that the code logic is more sound and efficient over all. 
 
 # What Did We Change?
 

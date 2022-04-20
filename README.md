@@ -17,10 +17,11 @@ Using images and examples of your code, compare the stock performance between 20
 
 
 ## Refactored Code Output & Run Time
-![VBA_Output_2017](https://user-images.githubusercontent.com/66224990/164048630-a5a4355b-c3ad-4ee7-93b4-717f0bff5cce.png)![VBA_Challenge_2017](https://user-images.githubusercontent.com/66224990/164048907-084f996c-3c58-4636-ab39-85bf29030445.png)
+<img width="324" alt="VBA_Output_2017" src="https://user-images.githubusercontent.com/66224990/164130299-d58c93cb-cab8-4dc9-8b49-da6d395ddf56.png"><img width="250" alt="VBA_Challenge_2017" src="https://user-images.githubusercontent.com/66224990/164130308-a320e12e-7306-4610-85b9-87f0b4adf09b.png">
 
 
-![VBA_Output_2018](https://user-images.githubusercontent.com/66224990/164048824-8f25a5f6-6243-426b-bf53-4ee6a3572b46.png)![VBA_Challenge_2018](https://user-images.githubusercontent.com/66224990/164048925-c310dd68-8127-41d1-9541-d97b96d0712c.png)
+<img width="325" alt="VBA_Output_2018" src="https://user-images.githubusercontent.com/66224990/164130320-566925f9-fc1c-4f88-916c-b24ca22c0b52.png"><img width="249" alt="VBA_Challenge_2018" src="https://user-images.githubusercontent.com/66224990/164130334-b3268da5-f973-4f93-af10-0d51538bac67.png">
+
 
 
 

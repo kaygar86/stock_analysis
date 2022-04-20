@@ -4,7 +4,7 @@
 
 The purpose of this analysis was to provide our friend Steve with a tool to analyze stock returns. We created a VBA script that analyzed the returns of 12 different stocks for the years 2017 and 2018. The original code used a nested loop that looped through all 3013 rows for each of the 12 tickers and delivered the return percentage. We formatted the output data to highlight the positive returns as green and negative ones as red. 
 
-Steve really liked the tool we provided and wanted to potentially use it to analyze thousands of stocks, which would potentially require the code to run on a much larger data. We refactored the code to improve efficiency and run time. The main change we made was to remove the nested loop and include a ticker index that enabled the code to only loop through the 3013 rows one time and still deliver the analysis of each ticker. Using VBA's timer feature in the script we captured and compared the run times of the original and refactored code. Our results are documented below. 
+Steve really liked the tool we provided and wanted to use it to analyze any number of stocks, which would potentially require the code to run through a much larger data set than 3013 rows. We refactored the code to improve efficiency and run time. The main change we made was to remove the nested loop and include a ticker index that enabled the code to only loop through the 3013 rows one time and still deliver the analysis of each ticker. Using VBA's timer feature in the script we captured and compared the run times of the original and refactored code. Our results are documented below. 
 
 
 # Results: 
@@ -59,8 +59,18 @@ The refactored code below removed the nested loop and used a ticker index, which
 
 This resulted in a much shorter run time since it removed the need to loop through all 3013 rows 12 times. With the inclusion of the 3 output arrays (tickerVolumes, tickerStartingPrices, tickerEndingPrices) we were also able to separate the tasks that were being performed. As the code looped through the rows it gathered the data for each ticker and then once all were completed it output that information.
 
-## Summary: In a summary statement, address the following questions.
+# Summary
 
-* What are the advantages or disadvantages of refactoring code?
+## What are the advantages or disadvantages of refactoring code?
 
-* How do these pros and cons apply to refactoring the original VBA script?
+An obvious advantage of refactoring code is improved efficiency, which may return faster run-times and more consistent performance. Another advantage could be simplified logic, which could make it easier for a new person to understand and work with the code in the future. Depending on what type of data you're working with, refactoring code might be necessary if you want to scale it to run well with larger data sets.
+
+There are instances, however, when refactoring is not necessary or viable. Refactoring could potentially introduce bugs or otherwise risk breaking the original code, which may take a lot of time to return it to it to a working state again. It could also be expensive and take a lot of resources to refactor code that is working just fine and getting the job done. 
+
+In the end, management needs to weigh the pros and cons of refactoring code and it's likely that the old adage "If it ain't broke, don't fix it" could apply to the code in question. 
+
+## How do these pros and cons apply to refactoring the original VBA script?
+
+In regards to the stock analysis code we refactored in VBA we definitely saw the advantages of much faster run-time and consistent results. The refactored code also made more sense by using a ticker index because it follows the same logic a person would use if they were running this analysis manually. A human wouldn't look at each of the 3013 rows, they would gather the calculations from each group since they were organized by ticker and date. 
+
+One disadvantage of the refactored code is that it requires the coder to be much more advances in VBA than the original. Since I am brand new to using VBA it took me a lot of time, trial and error to get it working and to understand how exactly it was working. Another potential disadvantage for refactoring this code is that the main reason why the code worked was because the data set was sorted by ticker and date. It's possible that if Steve pulls stock data from another source it might not be as neatly organized so the data would need to be properly cleaned and sorted before he could run this tool. 
